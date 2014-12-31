@@ -1,8 +1,41 @@
 body,html{
 	min-height : 100%;
 }
-body{
+/*body{ 
 	background: url('../images/background_image_repeat.jpg')repeat;
+}*/
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+/*pucho-kem-container css*/
+/*pucho-kem-header css*/
+.header-right-container-items{
+	border-right : 1px solid 
+}
+.logo{
+	float : left;
+	font-size : 2.5em;
+	margin: 0 10px;
+}
+.logo h1{margin : 0}
+div.slogan{
+	display: inline-block;
+	/* top: 25px; */
+	position: relative;
+
+}
+div.slogan h3{
+	margin: 10px 0 0 0;
+}
+.pucho-kem-left-container{
+	float:left;
+	width: 50%;
+}
+.pucho-kem-header{
+	background: #FF3C1F;
+}
+#header{
+	height : 80px;
 }
 #header ul{
 	list-style:none;
@@ -22,15 +55,15 @@ body{
 	border-bottom:none;
 }
 #container{
-	width:80%;
+	/* width:80%;
 	min-width : 600px;
-	height:600px;
+	height:600px; */
 	background-color:rgb(85,172,238);
-	margin:50px auto;
-	border-radius : 5px;
-	padding:10px;
+	/* margin:50px auto; */
+	/* border-radius : 5px; */
+	/* padding:10px; */
 	z-index:1;
-	box-shadow : 0 0 20px rgba(0,0,0,0.5);
+	/* box-shadow : 0 0 20px rgba(0,0,0,0.5); */
 }
 #footer{
 	
@@ -52,7 +85,7 @@ body{
 #sideNav{
 	float:left;
 	height : 73%;
-	background : yellow;
+	/* background : yellow; */
 	width:20%;
 }
 #mainContainer{
@@ -64,8 +97,15 @@ body{
 	margin-left: 1%;
 }
 #sideNav nav ul{
-	list-style:none;
 	padding : 10px;
+}
+#sideNav nav ul li a{
+	color : #879096;
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+#sideNav nav ul li{
+text-align : center;
 }
 div.title{
 	height: 200px;
@@ -79,23 +119,15 @@ div.title{
 #sideNav nav a{
 	text-decoration : none;
 }
-.logo{
-	float : left;
-}
-div.slogan{
-	display: inline-block;
-	top: 25px;
-	position: relative;
-
-}
 /* search bar css*/
 .searchBar{
 	float:right;
 	position : relative;
-	top:60px;
+	/* top:60px; */
 	border-radius:2px;
 	box-shadow : 0 0 20px rgba(0,0,0,.5);
 	clear:both;
+	margin-right:10px;
 }
 #searchPuchoKem{
 	padding: 0;
@@ -119,7 +151,12 @@ div.slogan{
 }
 /*user options css*/
 .userOptions{
-	float : right;
+	float: right;
+margin: 4px 10px 0 0;
+font-weight: bold;
+font-size: 1.2em;
+border-right: 1px solid black;
+padding-right: 10px;
 }
 .userOptions div{
 	height : 30px;
@@ -128,4 +165,5 @@ div.slogan{
 }
 .headerRightContainer{
 	float:right;
+	padding-top : 4px;
 }
