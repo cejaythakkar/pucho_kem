@@ -6,6 +6,9 @@ $(function(){
 				$('.pucho-kem-sideNav').css({background:'#f7f7f7'}).removeClass('scrolled');
 			}
 		});
+		$('#searchButton').on('click',function(){
+			$('#searchPuchoKem').addClass('searchButtonClick').select();
+		});
 		var curtainComponent = (function(){
 			var init = function (){
 					$('<div>',{id:"curtain"})

@@ -33,7 +33,7 @@ div.slogan h3{
 }
 .pucho-kem-left-container{
 	float:left;
-	width: 50%;
+	width: 20%;
 }
 .pucho-kem-header,.pucho-kem-footer{
 	background: #ccec75;
@@ -151,8 +151,9 @@ div.title{
 	padding: 0;
 	border: none;
 	height:100%;
-	width: 270px;
+	width: 0;
 	font-size : 2.2em;
+	background : #f7f7f7;
 }		
 #searchButton{
 	float:right;
@@ -162,12 +163,8 @@ div.title{
 	
 }
 .userOptions > span{
-	margin: 25px 0;
-	display: block;
-/* top: 50%; */
-	position: relative;
 	color : #ff6f69;
-/* height: 100%;/**/
+	font-size:1.5em;
 }
 #searchButton,#searchPuchoKem{
 	height:100%;
@@ -196,7 +193,7 @@ font-size: 1.2em;
 border-right: 1px solid #d2d6d5;
 height: 100%;
 /* padding-right: 10px; */
-padding: 0 15px;
+padding:15px;
 }
 .userOptions div{
 	height : 30px;
