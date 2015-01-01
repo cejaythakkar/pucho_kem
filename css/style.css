@@ -6,8 +6,12 @@ body,html{
 }*/
 body{
 	font-family: 'Titillium Web', sans-serif;
+	color:#4e4e4e;
 }
 /*pucho-kem-container css*/
+.pucho-kem-container{
+	
+}
 /*pucho-kem-header css*/
 .header-right-container-items{
 	border-right : 1px solid 
@@ -31,11 +35,16 @@ div.slogan h3{
 	float:left;
 	width: 50%;
 }
-.pucho-kem-header{
-	background: #FF3C1F;
+.pucho-kem-header,.pucho-kem-footer{
+	background: #ccec75;
+	height : 70px;
 }
-#header{
-	height : 80px;
+.pucho-kem-header{
+	position:fixed;
+	display: block;
+	width : 100%;
+	z-index: 1000;
+	border-bottom:1px solid #d2d6d5;
 }
 #header ul{
 	list-style:none;
@@ -54,19 +63,8 @@ div.slogan h3{
 	position :relative;
 	border-bottom:none;
 }
-#container{
-	/* width:80%;
-	min-width : 600px;
-	height:600px; */
-	background-color:rgb(85,172,238);
-	/* margin:50px auto; */
-	/* border-radius : 5px; */
-	/* padding:10px; */
-	z-index:1;
-	/* box-shadow : 0 0 20px rgba(0,0,0,0.5); */
-}
-#footer{
-	
+.pucho-kem-footer{
+	clear : both;
 }
 
 #header #selected{
@@ -82,30 +80,46 @@ div.slogan h3{
 	margin : 0 0 10px 0;
 	border:0;
 }
-#sideNav{
-	float:left;
+.pucho-kem-sideNav{
+	top: 70px;
+	position: fixed;
+	/* float:left;
 	height : 73%;
-	/* background : yellow; */
-	width:20%;
+	/* background : yellow; */ 
+	width:200px;
+	height : 700px;
+	z-index : 1000;
+	margin-right : 10px;
+}
+.pucho-kem-sideNav,#mainContainer{
+	background : #f7f7f7;
 }
 #mainContainer{
 	padding-left: 10px;
 	float: left;
-	height: 73%;
-	width: 79%;
-	background: #c3c3c3;
-	margin-left: 1%;
+	/* height: 73%; */
+	/* width: 952px; */
+	/* background: #c3c3c3; */
+	/* margin-left: 1%; */
+	background:#f7f7f7;
+	position:relative;
+	top:70px;
+	left:200px;
 }
-#sideNav nav ul{
-	padding : 10px;
+.pucho-kem-sideNav nav ul{
+	padding : 10px 0;
 }
-#sideNav nav ul li a{
-	color : #879096;
+.pucho-kem-sideNav nav ul li a{
+	color : black;
 	font-weight: bolder;
 	font-size: 1.5em;
 }
-#sideNav nav ul li{
+.pucho-kem-sideNav nav ul li a:hover{
+	color : #ff6f69;
+}
+.pucho-kem-sideNav nav ul li{
 text-align : center;
+position:relative;
 }
 div.title{
 	height: 200px;
@@ -116,7 +130,10 @@ div.title{
 	left: 0;
 	z-index: -1;
 }
-#sideNav nav a{
+.pucho-kem-sideNav.scrolled nav ul li a:hover{
+	color : #ccec75;
+}
+.pucho-kem-sideNav nav a{
 	text-decoration : none;
 }
 /* search bar css*/
@@ -125,38 +142,61 @@ div.title{
 	position : relative;
 	/* top:60px; */
 	border-radius:2px;
-	box-shadow : 0 0 20px rgba(0,0,0,.5);
+	/* box-shadow : 0 0 20px rgba(0,0,0,.5); */
 	clear:both;
-	margin-right:10px;
+	/* margin-right:10px; */
+	height:100%;
 }
 #searchPuchoKem{
 	padding: 0;
 	border: none;
+	height:100%;
+	width: 270px;
+	font-size : 2.2em;
 }		
 #searchButton{
 	float:right;
 	width : 40px;
-	background : #E6E6E6;
+	background : #4e4e4e;
+	width: 70px;
 	
+}
+.userOptions > span{
+	margin: 25px 0;
+	display: block;
+/* top: 50%; */
+	position: relative;
+	color : #ff6f69;
+/* height: 100%;/**/
 }
 #searchButton,#searchPuchoKem{
-	height:30px;
+	height:100%;
 }
 .searchIconWrapper i{
-	font-size : 1.4em;
-	
+	font-size : 2.4em;
+	height: 100%;
+	color:#ff6f69
+}
+.pucho-kem-right-header-option:hover{
+		background : #ff6f69;
+		transition : all .5s;
+}
+.pucho-kem-right-header-option:hover span{
+	color : #ccec75;
 }
 .searchIconWrapper{
-	padding: 5px 8px;
+	padding: 15px
 }
 /*user options css*/
 .userOptions{
 	float: right;
-margin: 4px 10px 0 0;
+/* margin: 0 10px; */
 font-weight: bold;
 font-size: 1.2em;
-border-right: 1px solid black;
-padding-right: 10px;
+border-right: 1px solid #d2d6d5;
+height: 100%;
+/* padding-right: 10px; */
+padding: 0 15px;
 }
 .userOptions div{
 	height : 30px;
@@ -165,5 +205,25 @@ padding-right: 10px;
 }
 .headerRightContainer{
 	float:right;
-	padding-top : 4px;
+	height:100%;
+	/* padding-top : 4px; */
+}
+.pucho-kem-sideNav nav ul li:after {
+content: '';
+position: absolute;
+width: 100%;
+height: 6%;
+background: #ff6f69;
+left: -100%;
+bottom: 0;
+}
+.pucho-kem-sideNav.scrolled nav ul li:hover:after{
+	background : #ccec75;
+}
+.pucho-kem-sideNav nav ul li:hover:after {
+left: 0;
+transition: all .3s;
+}
+.last-pucho-kem-header-option{
+	margin-right : 0;
 }

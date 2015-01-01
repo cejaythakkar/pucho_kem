@@ -1,5 +1,11 @@
 $(function(){
-		
+		$(document).on('scroll',function(evt){
+			if($(this).scrollLeft() > 10){
+				$('.pucho-kem-sideNav').css({background:'#ff6f69'}).addClass('scrolled');
+			}else{
+				$('.pucho-kem-sideNav').css({background:'#f7f7f7'}).removeClass('scrolled');
+			}
+		});
 		var curtainComponent = (function(){
 			var init = function (){
 					$('<div>',{id:"curtain"})
