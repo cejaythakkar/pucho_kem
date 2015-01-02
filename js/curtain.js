@@ -1,13 +1,17 @@
 $(function(){
 		$(document).on('scroll',function(evt){
 			if($(this).scrollLeft() > 10){
-				$('.pucho-kem-sideNav').css({background:'#ff6f69'}).addClass('scrolled');
+				$('.pucho-kem-sideNav').addClass('scrolled');
 			}else{
-				$('.pucho-kem-sideNav').css({background:'#f7f7f7'}).removeClass('scrolled');
+				$('.pucho-kem-sideNav').removeClass('scrolled');
+			}
+		}).on('click',function(evt){
+			if(!($(evt.target).hasClass('pucho-kem-search-bar-part'))){
+				$('#searchPuchoKem').removeClass('searchButtonClick').addClass('pucho-kem-search-bar-collapse');
 			}
 		});
 		$('#searchButton').on('click',function(){
-			$('#searchPuchoKem').addClass('searchButtonClick').select();
+			$('#searchPuchoKem').addClass('searchButtonClick').removeClass('pucho-kem-search-bar-collapse').select();
 		});
 		var curtainComponent = (function(){
 			var init = function (){

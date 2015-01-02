@@ -80,20 +80,6 @@ div.slogan h3{
 	margin : 0 0 10px 0;
 	border:0;
 }
-.pucho-kem-sideNav{
-	top: 70px;
-	position: fixed;
-	/* float:left;
-	height : 73%;
-	/* background : yellow; */ 
-	width:200px;
-	height : 700px;
-	z-index : 1000;
-	margin-right : 10px;
-}
-.pucho-kem-sideNav,#mainContainer{
-	background : #f7f7f7;
-}
 #mainContainer{
 	padding-left: 10px;
 	float: left;
@@ -106,21 +92,8 @@ div.slogan h3{
 	top:70px;
 	left:200px;
 }
-.pucho-kem-sideNav nav ul{
-	padding : 10px 0;
-}
-.pucho-kem-sideNav nav ul li a{
-	color : black;
-	font-weight: bolder;
-	font-size: 2.5em;
-}
-.pucho-kem-sideNav nav ul li a:hover{
-	color : #ff6f69;
-}
-.pucho-kem-sideNav nav ul li{
-text-align : center;
-position:relative;
-}
+
+
 div.title{
 	height: 200px;
 	width: 350px;
@@ -130,12 +103,9 @@ div.title{
 	left: 0;
 	z-index: -1;
 }
-.pucho-kem-sideNav.scrolled nav ul li a:hover{
+/*. pucho-kem-sideNav.scrolled nav ul li a:hover{
 	color : #ccec75;
-}
-.pucho-kem-sideNav nav a{
-	text-decoration : none;
-}
+} */
 /* search bar css*/
 .searchBar{
 	float:right;
@@ -205,22 +175,10 @@ padding:15px;
 	height:100%;
 	/* padding-top : 4px; */
 }
-.pucho-kem-sideNav nav ul li:after {
-content: '';
-position: absolute;
-width: 100%;
-height: 6%;
-background: #ff6f69;
-left: -100%;
-bottom: 0;
-}
-.pucho-kem-sideNav.scrolled nav ul li:hover:after{
-	background : #ccec75;
-}
-.pucho-kem-sideNav nav ul li:hover:after {
-left: 0;
-transition: all .3s;
-}
 .last-pucho-kem-header-option{
 	margin-right : 0;
+}
+.pucho-kem-search-bar-collapse{
+	width :0 !important;
+	transition : width 1s;
 }

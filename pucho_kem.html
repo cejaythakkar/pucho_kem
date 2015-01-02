@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css\bootstrap.css">
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="demo-files\demo.css">
+	<link rel="stylesheet" type="text/css" href="css\sidnav.css">
 	<link rel="stylesheet" type="text/css" href="css\header.css">
     <link rel="stylesheet" type="text/css" href="css\style.css">
     <script type="text/javascript" src="js\jquery-2.1.1.js"></script>
@@ -32,22 +33,32 @@
                 </div>
             </div>
             <div class="headerRightContainer">
-                <div class="searchBar">
-                    <input type="text" id="searchPuchoKem" placeholder="search pucho kem" />
+                <div class="searchBar pucho-kem-search-bar-part">
+                    <input type="text" id="searchPuchoKem" class="pucho-kem-search-bar-part" placeholder="search pucho kem" />
                     <div id="searchButton">
-                        <div class="searchIconWrapper">
-                            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                        <div class="searchIconWrapper pucho-kem-search-bar-part">
+                            <i class="glyphicon glyphicon-search pucho-kem-search-bar-part" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
                 <div class="userOptions last-pucho-kem-header-option pucho-kem-right-header-option"><span>Join</span></div>
                 <div class="userOptions pucho-kem-right-header-option"><span>Sign in</span></div>
 				<div class="socialWrapper">
-					<div class="social"><span class="icon icon-facebook"></span></div>
-					<div class="social"><span class="icon icon-twitter"></span></div>
-					<div class="social"><span class="icon icon-feed2"></span></div>
-					<div class="social"><span class="icon icon-linkedin2"></span></div>
-					<div class="social"><span class="icon icon-google-plus"></span></div>
+					<div class="social-container">
+						<div class="social"><span class="icon icon-facebook"></span></div>
+					</div>
+					<div class="social-container">
+						<div class="social"><span class="icon icon-twitter"></span></div>
+					</div>
+					<div class="social-container">
+						<div class="social"><span class="icon icon-feed2"></span></div>
+					</div>
+					<div class="social-container">
+						<div class="social"><span class="icon icon-linkedin2"></span></div>
+					</div>
+					<div class="social-container">
+						<div class="social"><span class="icon icon-google-plus"></span></div>
+					</div>
 				</div>
 				
             </div>
@@ -71,6 +82,21 @@
         </div>
         <div id="mainContainer">
             <div id="contentbody">
+				<div class="song-list">
+					<div class="song-list-title">
+						<h3>Just Arrived</h3>
+					</div>
+					<ol class="song-list-grid">
+						<li>
+							<div class="art album-art">
+								<a title="Mitti Di Khushboo songs, Listen to Mitti Di Khushboo">
+									<img src="http://c.saavncdn.com/563/Mitti-Di-Khushboo-Punjabi-2014-150x150.jpg" alt="New Hindi Songs">
+								</a>
+							</div>
+							<h3 class="title ellip"><a href="http://www.saavn.com/s/album/hindi/Mitti-Di-Khushboo-2014/504P7Glr7gE_" onclick="State.autoLoadPostContentFetch(false);Util.logAndGoToUrl(['content:new-releases:view:'+escape('Mitti Di Khushboo'),'albumid','1201458'], 'http://www.saavn.com/s/album/hindi/Mitti-Di-Khushboo-2014/504P7Glr7gE_');return false;" title="Mitti Di Khushboo songs, Listen to Mitti Di Khushboo">Mitti Di Khushboo</a></h3>
+						</li>
+<					</ol>
+				</div>
                 <div class="article-single">
                     <h1 itemprop="name" class="single-title">Responsive Web Design: 50 Examples and Best Practices</h1>
 
