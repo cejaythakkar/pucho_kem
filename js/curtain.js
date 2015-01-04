@@ -13,6 +13,12 @@ $(function(){
 		$('#searchButton').on('click',function(){
 			$('#searchPuchoKem').addClass('searchButtonClick').removeClass('pucho-kem-search-bar-collapse').select();
 		});
+		$('.pucho-kem-sideNav li').on('click',function(evt){
+			var section = $(evt.target).attr('section-id');
+			console.log($('div.' + section).offset().top);
+			$('body').animate({
+				scrollTop:($('div.' + section).offset().top - 80)},500);
+		});
 		var curtainComponent = (function(){
 			var init = function (){
 					$('<div>',{id:"curtain"})
